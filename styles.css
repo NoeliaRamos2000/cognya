@@ -140,8 +140,8 @@ a {
   }
 
   .nav-list a {
-    font-size: 0.8125rem;
-    padding: 0.4rem 0.65rem;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.5rem;
   }
 }
 
@@ -719,21 +719,17 @@ footer .nota {
 }
 
 .figura {
-  margin: 1.75rem 0 0;
-  max-width: 40rem;
+  margin: 1.5rem 0 0;
+  max-width: 19rem;
 }
 
 .figura img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: auto;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   display: block;
-  box-shadow: 0 10px 28px -14px rgba(42, 33, 64, 0.45);
-}
-
-.figura.alto img {
-  object-position: center 18%;
 }
 
 .figura figcaption {
