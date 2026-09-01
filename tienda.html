@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tienda · COGNYA Editores</title>
+    <meta name="description" content="Catálogo de libros COGNYA: plan lector, matemática y comunicación." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="estrellas">
+      <div class="wrap">
+        <header class="top">
+          <a class="marca" href="./">
+            <img src="./marca/cognya.png" alt="COGNYA Editores" width="1755" height="655" />
+          </a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu">Menú</button>
+        </header>
+        <nav>
+          <ul class="nav-list" id="menu" data-nav>
+            <li><a href="./">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./programas.html">Programas</a></li>
+            <li><a href="./lineas.html">Líneas</a></li>
+            <li><a href="./comunidad.html">Comunidad</a></li>
+            <li><a href="./tienda.html" aria-current="page">Tienda</a></li>
+          </ul>
+        </nav>
+
+        <section class="hero">
+          <span class="cinta">Pedido</span>
+          <h1>Tienda</h1>
+          <p class="lead">
+            El catálogo de ahora. Filtra por línea, abre el título que te
+            interesa y pide el ejemplar por correo. El pago y el envío se
+            coordinan después: no hay carrito.
+          </p>
+        </section>
+
+        <div class="filtros" role="group" aria-label="Filtrar catálogo">
+          <button type="button" class="filtro" data-filtro="todas" aria-pressed="true">Todas</button>
+          <button type="button" class="filtro" data-filtro="lector" aria-pressed="false">Área de lector</button>
+          <button type="button" class="filtro" data-filtro="matematica" aria-pressed="false">Matemática</button>
+          <button type="button" class="filtro" data-filtro="comunicacion" aria-pressed="false">Comunicación</button>
+        </div>
+
+        <p class="vacio" data-vacio>No hay títulos en esa línea.</p>
+
+        <ul class="libros">
+          <li class="libro-card" data-linea="lector" id="potter">
+            <div class="portada" style="background: var(--amarilla)">
+              <img src="./portadas/potter.jpg" alt="Portada de Beatrix Potter" />
+              <span class="lomo" style="background: var(--amarilla)"></span>
+            </div>
+            <p class="meta" style="color: var(--amarilla)">Lector · 2º</p>
+            <p class="titulo">Beatrix Potter</p>
+            <p class="relato">El cuento de Johnny, el ratón de ciudad</p>
+            <p class="precio">S/ 48</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20Beatrix%20Potter">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="lector" id="quiroga">
+            <div class="portada" style="background: var(--naranja)">
+              <img src="./portadas/quiroga.jpg" alt="Portada de Horacio Quiroga" />
+              <span class="lomo" style="background: var(--naranja)"></span>
+            </div>
+            <p class="meta" style="color: var(--naranja)">Lector · 3º</p>
+            <p class="titulo">Horacio Quiroga</p>
+            <p class="relato">El paso del Yabebirí</p>
+            <p class="precio">S/ 48</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20Horacio%20Quiroga">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="lector" id="de-amicis">
+            <div class="portada" style="background: var(--verde)">
+              <img src="./portadas/de-amicis.jpg" alt="Portada de Edmundo De Amicis" />
+              <span class="lomo" style="background: var(--verde)"></span>
+            </div>
+            <p class="meta" style="color: var(--verde)">Lector · 5º</p>
+            <p class="titulo">Edmundo De Amicis</p>
+            <p class="relato">De los Apeninos a los Andes</p>
+            <p class="precio">S/ 52</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20De%20Amicis">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="lector" id="wilde">
+            <div class="portada" style="background: var(--verde)">
+              <img src="./portadas/wilde.jpg" alt="Portada de Oscar Wilde" />
+              <span class="lomo" style="background: var(--verde)"></span>
+            </div>
+            <p class="meta" style="color: var(--verde)">Lector · 5º</p>
+            <p class="titulo">Oscar Wilde</p>
+            <p class="relato">El cumpleaños de la Infanta · El joven rey</p>
+            <p class="precio">S/ 52</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20Oscar%20Wilde">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="matematica" id="orbita">
+            <div class="portada" style="background: var(--amarilla)">
+              <div class="portada-dibujo">
+                <strong>Órbita numérica</strong>
+                <span>Contar · agrupar · 2º</span>
+              </div>
+              <span class="lomo" style="background: var(--ink)"></span>
+            </div>
+            <p class="meta" style="color: var(--amarilla)">Matemática · 2º</p>
+            <p class="titulo">Órbita numérica</p>
+            <p class="relato">Números en el mercado y en el recreo</p>
+            <p class="precio">S/ 45</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20Orbita%20numerica">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="matematica" id="fracciones">
+            <div class="portada" style="background: var(--naranja)">
+              <div class="portada-dibujo">
+                <strong>Fracciones del cielo</strong>
+                <span>Partes · 3º</span>
+              </div>
+              <span class="lomo" style="background: var(--ink)"></span>
+            </div>
+            <p class="meta" style="color: var(--naranja)">Matemática · 3º</p>
+            <p class="titulo">Fracciones del cielo</p>
+            <p class="relato">Repartir una pizza, un terreno, un cuento</p>
+            <p class="precio">S/ 45</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20Fracciones%20del%20cielo">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="matematica" id="geometria">
+            <div class="portada" style="background: var(--azul)">
+              <div class="portada-dibujo">
+                <strong>Geometría viva</strong>
+                <span>Patio · 4º</span>
+              </div>
+              <span class="lomo" style="background: var(--ink)"></span>
+            </div>
+            <p class="meta" style="color: var(--azul)">Matemática · 4º</p>
+            <p class="titulo">Geometría viva</p>
+            <p class="relato">Formas del patio, del mapa y de la caja</p>
+            <p class="precio">S/ 49</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20Geometria%20viva">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="matematica" id="razonamiento">
+            <div class="portada" style="background: var(--verde)">
+              <div class="portada-dibujo">
+                <strong>Razonar en órbita</strong>
+                <span>Problemas · 5º</span>
+              </div>
+              <span class="lomo" style="background: var(--ink)"></span>
+            </div>
+            <p class="meta" style="color: var(--verde)">Matemática · 5º</p>
+            <p class="titulo">Razonar en órbita</p>
+            <p class="relato">Un problema narrado, varias maneras de llegar</p>
+            <p class="precio">S/ 49</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20Razonar%20en%20orbita">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="comunicacion" id="palabras">
+            <div class="portada" style="background: var(--amarilla)">
+              <div class="portada-dibujo" style="color: var(--ink)">
+                <strong>Palabras que viajan</strong>
+                <span>Oralidad · 2º</span>
+              </div>
+              <span class="lomo" style="background: var(--rosa)"></span>
+            </div>
+            <p class="meta" style="color: var(--amarilla)">Comunicación · 2º</p>
+            <p class="titulo">Palabras que viajan</p>
+            <p class="relato">Decir, escuchar, escribir el primer párrafo</p>
+            <p class="precio">S/ 45</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20Palabras%20que%20viajan">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="comunicacion" id="taller">
+            <div class="portada" style="background: var(--azul)">
+              <div class="portada-dibujo">
+                <strong>El taller de la voz</strong>
+                <span>Escritura · 4º</span>
+              </div>
+              <span class="lomo" style="background: var(--rosa)"></span>
+            </div>
+            <p class="meta" style="color: var(--azul)">Comunicación · 4º</p>
+            <p class="titulo">El taller de la voz</p>
+            <p class="relato">Borrador, pareja, segunda versión</p>
+            <p class="precio">S/ 49</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20El%20taller%20de%20la%20voz">Pedir este libro</a>
+          </li>
+          <li class="libro-card" data-linea="comunicacion" id="mundo">
+            <div class="portada" style="background: var(--morada)">
+              <div class="portada-dibujo">
+                <strong>Redactar para el mundo</strong>
+                <span>Argumentar · 6º</span>
+              </div>
+              <span class="lomo" style="background: var(--rosa)"></span>
+            </div>
+            <p class="meta" style="color: var(--morada)">Comunicación · 6º</p>
+            <p class="titulo">Redactar para el mundo</p>
+            <p class="relato">Una evidencia, una voz, sin pelear</p>
+            <p class="precio">S/ 52</p>
+            <a class="boton tinta" href="mailto:librerias@cognya.pe?subject=Pedido%20Redactar%20para%20el%20mundo">Pedir este libro</a>
+          </li>
+        </ul>
+
+        <section class="bloque">
+          <p class="eyebrow">Colegios</p>
+          <h2>Lotes por grado</h2>
+          <p>
+            Si pides para un aula, escribe a
+            <a href="mailto:colegios@cognya.pe">colegios@cognya.pe</a>
+            con el grado y la cantidad. El 8% de ese lote va a la Fundación COGNYA.
+          </p>
+        </section>
+
+        <footer>
+          <p>COGNYA Editores · Lima, Perú</p>
+          <p>librerias@cognya.pe · colegios@cognya.pe</p>
+        </footer>
+      </div>
+    </main>
+    <script src="./site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuestras líneas · COGNYA Editores</title>
+    <meta name="description" content="Tres líneas editoriales: matemática, comunicación y el área de lector Te cuento un cuento." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="estrellas">
+      <div class="wrap">
+        <header class="top">
+          <a class="marca" href="./">
+            <img src="./marca/cognya.png" alt="COGNYA Editores" width="1755" height="655" />
+          </a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu">Menú</button>
+        </header>
+        <nav>
+          <ul class="nav-list" id="menu" data-nav>
+            <li><a href="./">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./programas.html">Programas</a></li>
+            <li><a href="./lineas.html" aria-current="page">Líneas</a></li>
+            <li><a href="./comunidad.html">Comunidad</a></li>
+            <li><a href="./tienda.html">Tienda</a></li>
+          </ul>
+        </nav>
+
+        <section class="hero">
+          <span class="cinta">Catálogo</span>
+          <h1>Nuestras líneas</h1>
+          <p class="lead">
+            Tres familias de libros, los mismos grados, los mismos colores.
+            El niño que ya reconoce la tapa amarilla de 2º la encuentra otra
+            vez en matemática y en comunicación.
+          </p>
+        </section>
+
+        <nav class="subnav" aria-label="Líneas">
+          <a href="#matematica">Matemática</a>
+          <a href="#comunicacion">Comunicación</a>
+          <a href="#lector">Área de lector</a>
+        </nav>
+
+        <article class="ancla" id="matematica">
+          <p class="eyebrow">Línea</p>
+          <h2>Matemática</h2>
+          <div class="prosa">
+            <p>
+              <strong>Órbita numérica</strong> no es un cuaderno de ejercicios
+              sueltos. Cada capítulo abre con una escena —un mercado, un
+              ómnibus, una huerta— y el problema aparece porque alguien en el
+              relato lo necesita. El niño cuenta, agrupa, reparte; después
+              escribe cómo lo hizo.
+            </p>
+            <p>
+              De 2º a 6º: números y patrones, fracciones con sentido, geometría
+              del patio, proporcionalidad y un cierre de razonamiento que no
+              cabe en una sola respuesta. El código digital abre el mismo
+              problema con una pista, no con la solución.
+            </p>
+          </div>
+          <p><a class="boton tinta" href="./tienda.html?linea=matematica">Ver libros de matemática</a></p>
+        </article>
+
+        <article class="ancla seccion" id="comunicacion">
+          <p class="eyebrow">Línea</p>
+          <h2>Comunicación</h2>
+          <div class="prosa">
+            <p>
+              <strong>La voz que viaja</strong> trabaja oralidad, lectura y
+              escritura como un solo oficio. Hay dictados que suenan a cuento,
+              entrevistas inventadas a personajes del plan lector, y un taller
+              de revisión en parejas: nadie entrega el primer borrador como si
+              fuera el último.
+            </p>
+            <p>
+              En 6º el eje es argumentar sin pelear: un texto corto, una
+              evidencia, una frase que se puede decir en voz alta. Encaja con
+              Wilde y De Amicis: primero el relato, después la propia voz.
+            </p>
+          </div>
+          <p><a class="boton tinta" href="./tienda.html?linea=comunicacion">Ver libros de comunicación</a></p>
+        </article>
+
+        <article class="ancla seccion" id="lector">
+          <p class="eyebrow">Línea</p>
+          <h2>Área de lector</h2>
+          <div class="prosa">
+            <p>
+              <strong>Te cuento un cuento</strong> es el corazón. Un autor clásico
+              por título, comprensión lectora y actividades de aula. Serie
+              Amarilla en 2º (Potter), Naranja en 3º (Quiroga), Azul en 4º
+              (aún en prensa), Verde en 5º (De Amicis y Wilde), Morada en 6º
+              (próximo).
+            </p>
+            <p>
+              El área de lector no compite con las otras líneas: las alimenta.
+              Un problema de matemática puede nacer del viaje de Marco. Una
+              carta en comunicación puede nacer de la Infanta. Por eso los
+              colores coinciden.
+            </p>
+          </div>
+          <p><a class="boton tinta" href="./tienda.html?linea=lector">Ver plan lector</a></p>
+        </article>
+
+        <footer>
+          <p>COGNYA Editores · Lima, Perú</p>
+          <p>hola@cognya.pe</p>
+        </footer>
+      </div>
+    </main>
+    <script src="./site.js"></script>
+  </body>
+</html>
