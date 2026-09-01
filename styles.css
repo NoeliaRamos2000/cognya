@@ -718,6 +718,36 @@ footer .nota {
   display: block;
 }
 
+.figura {
+  margin: 1.75rem 0 0;
+  max-width: 40rem;
+}
+
+.figura img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+  box-shadow: 0 10px 28px -14px rgba(42, 33, 64, 0.45);
+}
+
+.figura.alto img {
+  object-position: center 18%;
+}
+
+.figura figcaption {
+  margin: 0.55rem 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.figura .credito {
+  color: var(--ink-faint);
+  font-size: 0.6875rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
